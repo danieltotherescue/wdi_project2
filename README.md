@@ -14,7 +14,7 @@ Go to the as-yet-unbuilt website and sign up, browse, post, and enjoy.
 
 
 ERD
-<img src="assets/PerFinder_ERD.xml" alt="PerFinder ERD" />
+<img src="assets/PerFinder_ERD.png" alt="PerFinder ERD" />
 
 Wireframes
 <img src="assets/PerFinder_Wireframes.jpg" alt="PerFinder Wireframes" />
