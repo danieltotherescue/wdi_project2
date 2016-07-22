@@ -1,6 +1,6 @@
-# wdi_project2
+# Project2 - PerFinder
 
-Perfinder (Performer + Finder) is an application intended to enable people who saw performers on Santa Monica's Third Street Promenade to be able to post their favorites, find performers they didn't get the website of, or browse what impressed other users, or find more information on the upcoming performances of the performers they saw.
+Perfinder (Performer + Finder. Great name? Or greatest name?) is an application intended to enable people who saw performers on Santa Monica's Third Street Promenade to be able to post their favorites, find performers they didn't get the website of, browse what impressed other users, or find more information on upcoming performances of performers they saw.
 
 MVP
 Users will be able to browse posts by other users who have seen promenade performers who impressed them and/or that they took a picture of but need further info about.  In this way, users can learn more about performers and help each other find and follow their favorite street performers (or just performers that they wanted to know more about or remember the name of).  Street Performers will benefit by increased exposure, recognition, and following. Maybe.
