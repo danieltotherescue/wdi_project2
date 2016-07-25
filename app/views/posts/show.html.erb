@@ -1,0 +1,7 @@
+<h1> <%= @post.headline %> </h1>
+
+<%= link_to "Edit”, edit_post_path(@post) %>
+
+<p>This coffee is a <%= @post %> roast from <%= @post %>, and we have <%= @post %> pounds available.</p>
+
+<%= link_to "Back to the list!", posts_path %><%= link_to "Delete", post_path, method: :delete, data: { confirm: "Are you sure you want to delete this?"} %>

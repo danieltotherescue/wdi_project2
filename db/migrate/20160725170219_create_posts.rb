@@ -7,7 +7,7 @@ class CreatePosts < ActiveRecord::Migration
       t.datetime :occured
       t.string :performer_website
       t.string :performer_info
-      t.references :seeker, index: true, foreign_key: true
+      t.references :user, index: true, foreign_key: true
       t.string :image
 
       t.timestamps null: false
