@@ -3,26 +3,41 @@
 <%= form_for @post do |f| %>
 
     <div>
-        <%= f.label :name %>
-        <%= f.text_field :name %>
+        <%= f.label :headline %>
+        <%= f.text_field :headline %>
     </div>
 
     <div>
-        <%= f.label :roast %>
-        <%= f.text_field :roast %>
+        <%= f.label :content %>
+        <%= f.text_field :content %>
     </div>
 
     <div>
-        <%= f.label :origin %>
-        <%= f.text_field :origin %>
+        <%= f.label :occured %>
+        <%= f.text_field :occured %>
     </div>
 
     <div>
-        <%= f.label :quantity %>
-        <%= f.text_field :quantity %>
+        <%= f.label :performer_website %>
+        <%= f.text_field :performer_website %>
     </div>
 
-    <%= f.submit "Add new post!" %>
+    <div>
+        <%= f.label :performer_info %>
+        <%= f.text_field :performer_info %>
+    </div>
+
+    <div>
+        <%= f.label :category_id %>
+        <%= f.text_field :category_id %>
+    </div>
+
+    <div>
+        <%= f.label :image %>
+        <%= f.text_field :image %>
+    </div>
+
+    <%= f.submit "Submit" %>
 
 <% end %>
 

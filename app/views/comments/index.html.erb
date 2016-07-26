@@ -3,8 +3,8 @@
 <ul>
     <% @comments.each do |comment| %>
         <li>
-            <strong> <%= Comment.username %> </strong> - <%= Comment.content %>
-	     <%= link_to "More info", comment_path(comment) %>
+            <strong> <%= comment.content %> </strong> - made by <%=comment.user_id %>
+	     <%= link_to "Back to post", post_path(comment) %>  |  <%= link_to "Back to all posts!", posts_path %>
         </li>
     <% end %>
 </ul>

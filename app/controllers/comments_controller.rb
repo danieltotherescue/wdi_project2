@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
 
   def index
-    @comments = Comment.all
+    @comments = Comment.where(post_id: params[:post_id])
   end
 
   def show
@@ -9,14 +9,17 @@ class CommentsController < ApplicationController
   end
 
   def new
+    @post = Post.find(params[:post_id])
     @comment = Comment.new
   end
 
   def create
     @comment = Comment.new(comment_params) # here we use our comment_params method
+    @comment.post_id = params[:post_id]
+    @comment.user = current_user
 
     if @comment.save
-      redirect to :comments
+      redirect_to post_path(@comment.post_id)
     else
       render :new
     end

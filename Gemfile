@@ -27,6 +27,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'devise'
+
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap_form'
+
+ruby '2.2.3'
+
+group :production do
+  gem 'rails_12factor'
+end
 # Use Unicorn as the app server
 # gem 'unicorn'
 

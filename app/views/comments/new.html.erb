@@ -1,29 +1,15 @@
-<h1>Add a new comment!</h1>
+<h1>Add a new comment</h1>
 
-<%= form_for @comment do |f| %>
-
-    <div>
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-    </div>
+<%= form_for [@post, @comment] do |f| %>
 
     <div>
-        <%= f.label :roast %>
-        <%= f.text_field :roast %>
+        <%= f.label :content %>
+        <%= f.text_field :content %>
     </div>
+    <br>
 
-    <div>
-        <%= f.label :origin %>
-        <%= f.text_field :origin %>
-    </div>
-
-    <div>
-        <%= f.label :quantity %>
-        <%= f.text_field :quantity %>
-    </div>
-
-    <%= f.submit "Add new comment!" %>
+    <%= f.submit "Submit" %>
 
 <% end %>
 
-<%= link_to "Back to the list!", comments_path %>
+<%= link_to "Back to the feed!", posts_path %>

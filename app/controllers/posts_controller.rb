@@ -14,9 +14,10 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params) # here we use our post_params method
-
+    @post.user = current_user
+    
     if @post.save
-      redirect to :posts
+      redirect_to :posts
     else
       render :new
     end
