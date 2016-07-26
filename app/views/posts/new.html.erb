@@ -9,7 +9,7 @@
 
     <div>
         <%= f.label :content %>
-        <%= f.text_field :content %>
+        <%= f.text_area :content, size: "30x1" %>
     </div>
 
     <div>
@@ -29,7 +29,7 @@
 
     <div>
         <%= f.label :category_id %>
-        <%= f.text_field :category_id %>
+        <%= f.collection_select(:category_id, @category, :id, :name) %>
     </div>
 
     <div>

@@ -2,7 +2,40 @@
 
 <%= form_for @post do |f| %>
 
-    
+<div>
+    <%= f.label :headline %>
+    <%= f.text_field :headline %>
+</div>
+
+<div>
+    <%= f.label :content %>
+    <%= f.text_area :content, size: "30x1" %>
+</div>
+
+<div>
+    <%= f.label :occured %>
+    <%= f.text_field :occured %>
+</div>
+
+<div>
+    <%= f.label :performer_website %>
+    <%= f.text_field :performer_website %>
+</div>
+
+<div>
+    <%= f.label :performer_info %>
+    <%= f.text_field :performer_info %>
+</div>
+
+<div>
+    <%= f.label :category_id %>
+    <%= f.text_field :category_id %>
+</div>
+
+<div>
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+</div>
 
     <%= f.submit "Submit these changes!" %>
 

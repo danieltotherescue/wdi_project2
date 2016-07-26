@@ -27,13 +27,15 @@ class CommentsController < ApplicationController
 
   def edit
     @comment = Comment.find(params[:id])
+    @post = Post.find(params[:post_id])
+
   end
 
   def update
     @comment = Comment.find(params[:id])
 
     if @comment.update_attributes(comment_params) #here we use our comment_params method
-      redirect_to :comments
+      redirect_to post_path(params[:post_id])
     else
       render :edit
     end
@@ -42,7 +44,7 @@ class CommentsController < ApplicationController
   def destroy
     @comment = Comment.find(params[:id])
     @comment.destroy
-    redirect_to comments_path
+    redirect_to post_path(params[:post_id])
   end
 
   private

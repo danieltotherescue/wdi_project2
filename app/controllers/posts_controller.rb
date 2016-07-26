@@ -10,12 +10,13 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @category  = Category.all
   end
 
   def create
     @post = Post.new(post_params) # here we use our post_params method
     @post.user = current_user
-    
+
     if @post.save
       redirect_to :posts
     else
@@ -31,7 +32,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
 
     if @post.update_attributes(post_params) #here we use our post_params method
-      redirect_to :posts
+      redirect_to post_path(@post)
     else
       render :edit
     end

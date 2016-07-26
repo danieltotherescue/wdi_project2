@@ -1,29 +1,15 @@
 <h1>Edit this comment!</h1>
 
-<%= form_for @comment do |f| %>
+  <%= form_for [@post, @comment] do |f| %>
 
-    <div>
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-    </div>
+      <div>
+          <%= f.label :content %>
+          <%= f.text_area :content, size: "40x5" %>
+      </div>
+      <br>
 
-    <div>
-        <%= f.label :roast %>
-        <%= f.text_field :roast %>
-    </div>
+      <%= f.submit "Submit these changes!" %>
 
-    <div>
-        <%= f.label :origin %>
-        <%= f.text_field :origin %>
-    </div>
+  <% end %>
 
-    <div>
-        <%= f.label :quantity %>
-        <%= f.text_field :quantity %>
-    </div>
-
-    <%= f.submit "Submit these changes!" %>
-
-<% end %>
-
-<%= link_to "Back to the list!", post_comments_path %>
+<%= link_to "Back to the list!", post_path %>

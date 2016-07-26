@@ -3,7 +3,7 @@
 <ul>
     <% @posts.each do |post| %>
         <li> <%= post.headline %> <br>
-        <li> <%= post.content %> <br>
+             <%= post.content %> <br>
             by <strong> <%= post.user.username %> </strong>
 	     <%= link_to "More info", post_path(post) %>  |  <%= link_to "Comment", new_post_comment_path(post) %>
         </li>
