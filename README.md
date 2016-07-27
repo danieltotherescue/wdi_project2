@@ -8,7 +8,7 @@ https://trello.com/b/PhWgF8f6/wdi-project-2-perfinder
 Heroku link:
 https://perfinder.herokuapp.com/
 
-MVP
+#####MVP 
 Users will be able to browse posts by other users who have seen promenade performers who impressed them and/or that they took a picture of but need further info about.  In this way, users can learn more about performers and help each other find and follow their favorite street performers (or just performers that they wanted to know more about or remember the name of).  Street Performers will benefit by increased exposure, recognition, and following. Maybe.
 
 Technologies used:
