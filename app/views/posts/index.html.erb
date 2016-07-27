@@ -5,7 +5,14 @@
         <li> <%= post.headline %> <br>
              <%= post.content %> <br>
             by <strong> <%= post.user.username %> </strong>
-	     <%= link_to "More info", post_path(post) %>  |  <%= link_to "Comment", new_post_comment_path(post) %>
+	     <%= link_to "View", post_path(post) %>  |
+
+       <% if current_user %>
+          <%= link_to "Comment", new_post_comment_path(post) %>
+       <% elsif %>
+          <%= link_to "Comment", new_user_session_path  %>
+       <% end %>
+
         </li>
     <% end %>
 </ul>
