@@ -1,15 +1,20 @@
-<h1 class="center-text">PerFinder</h1>
-<!-- <img src="" alt="here we go" class="margin-image"> -->
-<br>
-<h3 class="center-text">Find the performers you saw</h3>
-<p>There's so much talent on the SMP* <br > It's kinda hard finding those that you want to see. <br > Find them here.  *(SMP: Santa Monica Promenade)</p>
+<div class="jumbotron">
+  <h1 class="specialCh">PerFinder</h1>
 
-<h3 class="center-text"><button><%= link_to "Browse", posts_path %></button></h3>
+  <h3 class="center-text">Find the performers you saw</h3>
 
-<div class="actions">
-  <%= link_to "Sign up", new_user_registration_path %>
-</div>
+  <p>There's so much talent on the SMP* <br > It's kinda hard finding those that you want to see. <br > Find them here.  *(SMP: Santa Monica Promenade)</p>
+  <p>
 
-<div class="actions">
-  <%= link_to "Log In", new_user_session_path %>
+    <%= link_to "Browse", posts_path, class: "btn btn-primary btn-lg" "specialCh", role: "button" %></p>
+
+
+  <div class="actions">
+    <%= link_to "Sign up", new_user_registration_path %>
+  </div>
+
+  <div class="actions">
+    <%= link_to "Log In", new_user_session_path %>
+  </div>
+
 </div>

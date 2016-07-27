@@ -1,4 +1,4 @@
-<h1> <%= @post.headline %> </h1>
+<h1 class="specialCh"> <%= @post.headline %> </h1>
 
 
 <% if current_user %>
@@ -27,7 +27,7 @@ Performer Info: <%= @post.performer_info %>
 <% if current_user %>
 
   <% if comment.user_id == current_user.id %>
-  <%= link_to "Edit", edit_post_comment_path(@post, comment) %> | <%= link_to "Delete", post_comment_path(@post, comment), method: :delete, data: { confirm: "Are you sure you want to delete this?"} %> •<br>
+  <%= link_to "Edit", edit_post_comment_path(@post, comment) %> | <%= link_to "Delete", post_comment_path(@post, comment), method: :delete, data: { confirm: "Are you sure you want to delete this?"} %> <br>
   <% end %>
 <% end %>
 
