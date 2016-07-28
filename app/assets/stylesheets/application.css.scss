@@ -18,10 +18,14 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
- .specialCh {
+.specialCh {
    font-family: 'Poiret One', cursive;
- }
+}
 
 .navbar {
   margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
 }
