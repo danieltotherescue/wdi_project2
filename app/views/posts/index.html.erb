@@ -1,18 +1,20 @@
-<h1 class="specialCh">Posts</h1><p>Write a <%= link_to "New Post", new_post_path(@post) %></p>
+<div class="container">
+    <h1 class="specialCh">Posts</h1><p>Write a <%= link_to "New Post", new_post_path(@post) %></p>
 
-<ul>
-    <% @posts.each do |post| %>
-        <li> <%= post.headline %> <br>
-             <%= post.content %> <br>
-            by <strong> <%= post.user.username %> </strong>
-	     <%= link_to "View", post_path(post) %>  |
+    <ul>
+        <% @posts.each do |post| %>
+            <li> <%= post.headline %> <br>
+                 <%= post.content %> <br>
+                by <strong> <%= post.user.username %> </strong>
+    	     <%= link_to "View", post_path(post) %>  |
 
-       <% if current_user %>
-          <%= link_to "Comment", new_post_comment_path(post) %>
-       <% elsif %>
-          <%= link_to "Comment", new_user_session_path  %>
-       <% end %>
+           <% if current_user %>
+              <%= link_to "Comment", new_post_comment_path(post) %>
+           <% elsif %>
+              <%= link_to "Comment", new_user_session_path  %>
+           <% end %>
 
-        </li>
-    <% end %>
-</ul>
+            </li>
+        <% end %>
+    </ul>
+</div>
