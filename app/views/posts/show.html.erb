@@ -9,8 +9,12 @@
     <% end %>
 
     <% end %>
-    <%= link_to "Back to posts!", posts_path %>
+
+    <br>
     <!-- &nbsp; <%= link_to "Edit", edit_post_path(@post) %> -->
+
+
+  <div class="alert alert-info" role="alert">
     <%= @post.image %>
     <p> <%= @post.content %> <br><br>
     When I saw them: <%= @post.occured %> <br><br>
@@ -23,7 +27,7 @@
 
     <% @post.comments.each do |comment| %>
 
-      *<%=  comment.content %>* <br>
+      *<%=  comment.content %>* by <em> <%= comment.user.username %> </em><br>
 
     <% if current_user %>
 
@@ -42,5 +46,9 @@
     <% end %>
 
     </p>
+  </div>
 
+    <div>
+      <%= link_to "Back to posts!", posts_path %>
+    </div>
 </div>
