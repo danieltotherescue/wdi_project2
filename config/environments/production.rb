@@ -40,6 +40,7 @@ Rails.application.configure do
     :s3_credentials => {
       :bucket => 'buskr'
     }
+  }
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Specifies the header that your server uses for sending files.
