@@ -6,11 +6,11 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
 
   config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-    :bucket => 'buskr'
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => 'buskr'
+    }
   }
-}
 
   config.cache_classes = false
 
