@@ -29,7 +29,7 @@ gem 'paperclip', '~> 4.1'
 
 gem 'figaro'
 
-gem 'aws-sdk'
+gem 'aws-sdk', '~> 2.3'
 
 gem 'devise'
 
