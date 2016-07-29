@@ -12,9 +12,9 @@
 
     <ul>
         <% @posts.each do |post| %>
-        <div class="alert alert-info" role="alert">
-            <li><strong class="specialCh"><h4> <%= post.headline %> </h4></strong>
-                 <%= post.content %> <br>
+        <div class="panel panel-primary" role="post">
+            <div class="panel-heading"><strong class="specialCh"><h4> <%= post.headline %> </h4></strong></div>
+                 <div class="panel-body"><%= post.content %> <br>
                 by <strong> <%= post.user.username %> </strong>
     	     <%= link_to "View", post_path(post) %>  |
 
@@ -24,8 +24,14 @@
               <%= link_to "Comment", new_user_session_path  %>
            <% end %>
 
-            </li>
-          </div>
+           <!-- <div class="media-left">
+             <a href="#">
+               <img class="media-object" src="@post.picture.url" alt="...">
+             </a>
+           </div> -->
+
+         </div>
+        </div>
         <% end %>
     </ul>
 </div>

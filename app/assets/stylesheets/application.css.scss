@@ -19,7 +19,8 @@
  @import "bootstrap";
 
 .specialCh {
-   font-family: 'Poiret One', cursive;
+   font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
 }
 
 .navbar {
@@ -41,4 +42,30 @@ li {
     overflow: hidden;
     text-align: center;
     img { width: 100% }
+}
+
+.round-image-100 {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}
+
+.alert {
+
+  background: #00d2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 0;
+
+}
+
+.alert-info {
+  color: white;
 }

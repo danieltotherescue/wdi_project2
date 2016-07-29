@@ -15,7 +15,7 @@
 
 
   <div class="alert alert-info" role="alert">
-    <%= @post.image %>
+    <div class="round-image-100 navbar-text navbar-right"><%= image_tag(@post.picture(:medium)) %></div>
     <p> <%= @post.content %> <br><br>
     When I saw them: <%= @post.occured %> <br><br>
     Performer Website: <%= @post.performer_website %> <br><br>
@@ -23,7 +23,7 @@
 
     <br><br><br><br>
 
-    <p><strong>Comments for this post:</strong></p>
+    <p><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>      <strong>Comments for this post:</strong></p>
 
     <% @post.comments.each do |comment| %>
 
