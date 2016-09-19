@@ -15,7 +15,9 @@
         <div class="panel panel-primary" role="post">
             <div class="panel-heading"><strong class="specialCh"><h4> <%= post.headline %> </h4></strong></div>
                  <div class="panel-body"><%= post.content %> <br>
-                <!-- by <strong> <%= post.user.username %> </strong> -->
+                <%= if post.user %>
+                  by <strong> <%= post.user.username %> </strong>
+                <%= end %>  
     	     <%= link_to "View", post_path(post) %>  |
 
            <% if current_user %>
